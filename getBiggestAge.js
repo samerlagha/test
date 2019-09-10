@@ -5,8 +5,17 @@ let arr =[ { name:'Jonny Walker',
          ]
      
 
+//это мой второй вариант
+function getBiggestAge(users)
+{
+    return users.reduce(function(prev, current) {
+        return (prev.BirthdDate < current.BirthdDate) ? prev : current
+    });
+}
 
-     
+console.log(getBiggestAge(arr));
+
+     //это была моя первая версия решения
 function getBiggestAge(BirthdDate1, BirthdDate2) {
 
     if(BirthdDate1 > BirthdDate2){
