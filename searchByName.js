@@ -5,7 +5,13 @@ let arr =[ { name:'Jonny Walker',
           BirthdDate:'2001-10-29' }
          ]
      
-
+// auther answer
+function searchByName2(users, userName)
+{
+    return users.filter(function(user) {
+        return user.name.indexOf(userName) != -1;
+    });
+}
 
 //const searchByName = (users, userName) => users.filter(user => user.name === userName);
 const searchByName = function(users, userName) {
